@@ -1,4 +1,4 @@
-type TreeNodes = any[] & { findNodeById: (id: any) => any }
+export type TreeNodes = any[] & { findNodeById: (id: any) => any }
 
 export function arrayToTree(
     nodes: any[],

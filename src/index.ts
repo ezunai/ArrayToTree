@@ -25,7 +25,7 @@ export function arrayToTree(
             parentId = parentId[idKey]
         }
 
-        if (!parentId) {
+        if (parentId === null || parentId === undefined) {
             roots.push(node)
         } else {
             const parent = nodes.find((item) => item[idKey] === parentId)
